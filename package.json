@@ -1,5 +1,10 @@
 {
+  "name":"digital-rosary",
+  "version":"1.0.0",
   "type": "module",
+  "scripts":{
+    "pray":"npx ts-node src/digital-rosary.ts"
+  },
   "dependencies": {
     "tsc": "^2.0.4",
     "tsx": "^4.20.6"
