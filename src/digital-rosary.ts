@@ -5,7 +5,7 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 
 //SOURCE: https://rosarycenter.org/how-to-pray-the-rosary/
 
-const boxed = (variable) => {
+const boxed = (variable: string): string => {
 	return ` ╔════════════════════╗
 ║ ${variable} ║
 ╚════════════════════╝
@@ -17,7 +17,7 @@ const mysteryToday = dayNames[dayOfWeek.toString()];
 let mysteryNumber = 1;
 
 //const meditation = `${mysteries[mysteryToday][mysteryNumber].meditation}`;
-const tenHailMarys = [];
+const tenHailMarys: string[] = [];
 
 const prayersObj = {
 	get startingPrayers() {
@@ -60,7 +60,7 @@ const prayersObj = {
 	},
 };
 
-const pray = async (element): Promise<void> => {
+const pray = async (element: string): Promise<void> => {
 	return new Promise((resolve) => {
 		console.clear();
 		console.log(boxed('♱ DIGITAL ROSARY ♱'));
@@ -82,7 +82,6 @@ const prayRosary = async () => {
 		}
 		mysteryNumber++;
 	}
-
 	for await (const prayer of prayersObj.finalPrayers) {
 		await pray(prayer);
 	}
