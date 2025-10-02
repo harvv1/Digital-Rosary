@@ -6,9 +6,9 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 //SOURCE: https://rosarycenter.org/how-to-pray-the-rosary/
 
 const boxed = (variable) => {
-	return `╔══════════════════╗
-║  ${variable}  ║
-╚══════════════════╝
+	return ` ╔════════════════════╗
+║ ${variable} ║
+╚════════════════════╝
 `.trim();
 };
 
@@ -22,40 +22,40 @@ const tenHailMarys = [];
 const prayersObj = {
 	get startingPrayers() {
 		return [
-			`- Make the Sign of the Cross -\n\n${prayers.SignOfCross}`,
-			`- Pray the "Apostles' Creed" -\n\n${prayers.ApostlesCreed}`,
-			`- Pray the "Our Father" -\n\n${prayers.OurFather}`,
-			`- Pray a "Hail Mary" for Faith -\n\n${prayers.HailMary}`,
-			`- Pray a "Hail Mary" for Hope -\n\n${prayers.HailMary}`,
-			`- Pray a "Hail Mary" for Charity -\n\n${prayers.HailMary}`,
-			`- Pray the "Glory be" -\n\n${prayers.GloryBe}`,
-			`- Today is ${dayOfWeek} so we meditate on the 5 ${mysteryToday} mysteries -`,
+			`☩ Make the Sign of the Cross ☩\n\n${prayers.SignOfCross}`,
+			`☩ Pray the "Apostles' Creed" ☩\n\n${prayers.ApostlesCreed}`,
+			`☩ Pray the "Our Father" ☩\n\n${prayers.OurFather}`,
+			`☩ Pray a "Hail Mary" for Faith ☩\n\n${prayers.HailMary}`,
+			`☩ Pray a "Hail Mary" for Hope ☩\n\n${prayers.HailMary}`,
+			`☩ Pray a "Hail Mary" for Charity ☩\n\n${prayers.HailMary}`,
+			`☩ Pray the "Glory be" ☩\n\n${prayers.GloryBe}`,
+			`☩ Today is ${dayOfWeek} so we meditate on the 5 ${mysteryToday} mysteries ☩`,
 		];
 	},
 
 	get hailMarys() {
 		for (let prayerIndex = 1; prayerIndex <= 10; prayerIndex++) {
 			tenHailMarys[prayerIndex - 1] =
-				`- Meditate - \n\n ${prayerIndex}. ${mysteries[mysteryToday][mysteryNumber][prayerIndex]}\n\n - Pray a "Hail Mary" -\n\n${prayers['HailMary']}\n\n - ${mysteries[mysteryToday][mysteryNumber].description} -`;
+				`☩ Meditate ☩ \n\n ${prayerIndex}. ${mysteries[mysteryToday][mysteryNumber][prayerIndex]}\n\n ☩ Pray a "Hail Mary" ☩\n\n${prayers['HailMary']}\n\n ☩ ${mysteries[mysteryToday][mysteryNumber].description} ☩`;
 		}
 		return tenHailMarys;
 	},
 
 	get mysteryPrayers() {
 		return [
-			`- Announce ${mysteries[mysteryToday][mysteryNumber].description} -`,
-			`- Pray the "Our Father" -\n\n${prayers.OurFather}`,
-			`- While meditating on ${mysteries[mysteryToday][mysteryNumber].name} -`,
+			`☩ Announce ${mysteries[mysteryToday][mysteryNumber].description} ☩`,
+			`☩ Pray the "Our Father" ☩\n\n${prayers.OurFather}`,
+			`☩ While meditating on ${mysteries[mysteryToday][mysteryNumber].name} ☩`,
 			...this.hailMarys,
-			`- Pray the "Glory be" -\n\n${prayers.GloryBe}`,
-			`- Pray the "Oh My Jesus"-\n\n${prayers.OhMyJesus}`,
+			`☩ Pray the "Glory be" ☩\n\n${prayers.GloryBe}`,
+			`☩ Pray the "Oh My Jesus"☩\n\n${prayers.OhMyJesus}`,
 		];
 	},
 	get finalPrayers() {
 		return [
-			`- Pray the "Hail Holy Queen"-\n\n${prayers.HailHolyQueen}`,
-			`- Pray the "Final Prayer"-\n\n${prayers.FinalPrayer}`,
-			`- Make the Sign of the Cross -\n\n${prayers.SignOfCross}`,
+			`☩ Pray the "Hail Holy Queen"☩\n\n${prayers.HailHolyQueen}`,
+			`☩ Pray the "Final Prayer"☩\n\n${prayers.FinalPrayer}`,
+			`☩ Make the Sign of the Cross ☩\n\n${prayers.SignOfCross}`,
 		];
 	},
 };
@@ -63,7 +63,7 @@ const prayersObj = {
 const pray = async (element): Promise<void> => {
 	return new Promise((resolve) => {
 		console.clear();
-		console.log(boxed('DIGITAL ROSARY'));
+		console.log(boxed('♱ DIGITAL ROSARY ♱'));
 		console.log(`\n ${element} \n`);
 		rl.question('[ Press enter to continue ]', () => {
 			resolve();
