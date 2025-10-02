@@ -53,8 +53,8 @@ const prayersObj = {
 	},
 	get finalPrayers() {
 		return [
-			`☩ Pray the "Hail Holy Queen"☩\n\n${prayers.HailHolyQueen}`,
-			`☩ Pray the "Final Prayer"☩\n\n${prayers.FinalPrayer}`,
+			`☩ Pray the "Hail Holy Queen" ☩\n\n${prayers.HailHolyQueen}`,
+			`☩ Pray the "Final Prayer" ☩\n\n${prayers.FinalPrayer}`,
 			`☩ Make the Sign of the Cross ☩\n\n${prayers.SignOfCross}`,
 		];
 	},
