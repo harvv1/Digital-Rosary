@@ -1,5 +1,5 @@
 //TODO: add the optional prayers
-export const prayers = {
+export const prayers: Record<string, string> = {
 	SignOfCross:
 		' In the name of the Father, and of the Son, and of the Holy Spirit.\n Amen.',
 	ApostlesCreed:
@@ -20,7 +20,7 @@ export const prayers = {
 
 //TODO: Add sundays of advent and christmas - Joyful, sundays of Lent - Sorrowful
 //thursdays joyful if Luminous is not desired, Saturdays Glorious if thursday is joyful
-export const dayNames: any = {
+export const dayNames: Record<string, string> = {
 	Monday: 'Joyful',
 	Tuesday: 'Sorrowful',
 	Wednesday: 'Glorious',
@@ -30,7 +30,7 @@ export const dayNames: any = {
 	Sunday: 'Glorious',
 };
 
-export const mysteries: any = {
+export const mysteries: Record<string, string> = {
 	Joyful: {
 		1: {
 			name: 'The Annunciation',
