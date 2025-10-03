@@ -15,7 +15,7 @@ export const prayers: Record<string, string> = {
 	HailHolyQueen:
 		' Hail Holy Queen, Mother of Mercy, our Life, our Sweetness, and our hope.\n To thee do we cry, poor banished children of Eve.\n To thee do we send up our sighs, mourning and weeping in this vale of tears.\n Turn then most gracious advocate, Thine eyes of mercy toward us, and after this,\n our exile, show unto us, the blessed fruit of thy womb, Jesus.\n O clement, O loving, O sweet Virgin Mary.\n Pray for us O Holy Mother of God, That we may be made worthy of the promises of Christ.\n Amen.',
 	FinalPrayer:
-		' Let us pray. O God, whose only begotten Son, by His life, death, and resurrection,\n has purchased for us the rewards of eternal life, grant, we beseech Thee,\n that meditating upon these mysteries of the Most Holy Rossary of the Blessed Virgin Mary,\n we may imitate what they contain and obtain what they promise, through the same Christ Our Lord.\n Amen.',
+		' Let us pray. O God, whose only begotten Son, by His life, death, and resurrection,\n has purchased for us the rewards of eternal life, grant, we beseech Thee,\n that meditating upon these mysteries of the Most Holy Rosary of the Blessed Virgin Mary,\n we may imitate what they contain and obtain what they promise, through the same Christ Our Lord.\n Amen.',
 };
 
 //TODO: Add sundays of advent and christmas - Joyful, sundays of Lent - Sorrowful
