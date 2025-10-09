@@ -48,7 +48,7 @@ const prayersObj = {
 			`☩ While meditating on ${mysteries[mysteryToday][mysteryNumber].name} ☩`,
 			...this.hailMarys,
 			`☩ Pray the "Glory be" ☩\n\n${prayers.GloryBe}`,
-			`☩ Pray the "Oh My Jesus"☩\n\n${prayers.OhMyJesus}`,
+			`☩ Pray the "Oh My Jesus" ☩\n\n${prayers.OhMyJesus}`,
 		];
 	},
 	get finalPrayers() {
